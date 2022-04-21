@@ -23,6 +23,10 @@ ul {
     list-style: none;
 }
 
+img {
+    display: block;
+}
+
 h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
@@ -36,8 +40,23 @@ h1, h2, h3, p, ul {
     padding-right: 15px;
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .hide {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .logo {
@@ -62,7 +81,7 @@ header {
 .main-header {
     display: flex;
     align-items: center;
-    height: 80px;
+    /* height: 80px; */
 }
 
 .header-nav {
@@ -82,11 +101,14 @@ header {
 
 .header-nav .link,
 .header-inf .link {
-    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
+
+.header-nav .link {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -107,8 +129,10 @@ header {
     color: var(--text-invert-color);
     background-color: var(--active-main-color);
         
-    width: 200px;
-    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
     margin-top: 30px;
 
     font-weight: 700;
@@ -168,8 +192,6 @@ header {
 
 .our-team {
     background-color: var(--background-second-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .our-team li{
@@ -194,10 +216,8 @@ header {
     line-height: 1.18;
 }
 
-.our-features,
-.our-doing,
-.our-team {
-    margin-top: 94px;
+.our-features {
+    padding-bottom: 0;
 }
 
 .our-features .list,
@@ -219,8 +239,10 @@ header {
 }
 
 .our-team .sub-item {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 /* Портфолио */
@@ -252,8 +274,7 @@ header {
 
 .portfolio-list li {
     width: 370px;
-    border: 1px solid #EEEEEE;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .our-portfolio .text-h3 {
@@ -270,11 +291,6 @@ header {
 .our-portfolio .text {
     font-size: 16px;
     line-height: 1.88;
-}
-
-.our-portfolio {
-    margin-top: 94px;
-    margin-bottom: 94px;
 }
 
 .filters {
@@ -302,10 +318,11 @@ header {
 }
 
 .portfolio-list .sub-item {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 24px;
-    margin-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border: 1px solid #EEEEEE;
 }
 
 .portfolio-list .text {
@@ -313,7 +330,6 @@ header {
 }
 
 /* Общее */
-
 
 .footer {
     background-color: var(--background-invert-color);
