@@ -84,9 +84,12 @@ header {
     /* height: 80px; */
 }
 
+.navigation {
+    margin-left: 93px;
+}
+
 .header-nav {
     display: flex;
-    margin-left: 93px;
 }
 
 .header-inf {
@@ -220,7 +223,14 @@ header {
     padding-bottom: 0;
 }
 
-.our-features .list,
+.our-features .item {
+    width: 270px;
+}
+
+.our-features .list {
+    display: flex;
+}
+
 .our-doing .list,
 .our-team .list {
     display: flex;
@@ -322,7 +332,9 @@ header {
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
-    border: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
 }
 
 .portfolio-list .text {
@@ -333,6 +345,8 @@ header {
 
 .footer {
     background-color: var(--background-invert-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer .logo {
@@ -350,11 +364,6 @@ header {
 .footer .text {
     color: var(--text-invert-color);
     font-style: normal;
-}
-
-.footer .container {
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 
 .footer address {
